@@ -1,0 +1,349 @@
+/* styles.css */
+
+/* Reset default browser styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Set font styles */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+  }
+
+  #logo{
+    width: 100px;
+  }
+  
+  h1, h2 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+
+  /* Set page layout */
+  header {
+    background-color: #E3B505;
+    color: #466AB0;
+    padding: 20px;
+    text-align: center;
+  }
+
+  nav ul{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav li{
+    list-style: none;
+  }
+  
+  main {
+    margin: 20px;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  footer {
+    background-color: #E3B505;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    margin-top: auto;
+    font-size:larger ;
+    font-weight: 700;
+    color: #006574;
+  }
+
+
+  
+  /* Style content elements */
+  h1 {
+    font-size: 24px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin: 20px;
+  }
+
+  .social{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    color: #466AB0;
+
+
+  }
+  
+  p {
+    line-height: 1.5;
+  }
+  
+  /* Add additional styles as needed */
+  .intro{
+    display: flex;
+    gap: 40px;
+  }
+
+  .manufacturing{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+  }
+
+  .design{
+    margin-top: 80px;
+  }
+
+  .later{
+    display: flex;
+    gap: 40px;
+  }
+
+  .later img{
+    width: 500px;
+  }
+
+
+  .wrap,
+  main{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+
+  /* hero */
+.video-area{
+  position: relative;
+  right: 0;
+  bottom: 0;
+
+}
+
+  #myVideo {
+   
+    min-width: 100%; 
+    min-height: 100%;
+  }
+  
+  .content {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  #muteBtn,
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #241711;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: #2F4858;
+  }
+  
+
+  .list {
+    list-style-type: disc;
+    margin: 20px 0;
+    padding: 0 0 0 20px;
+    
+  }
+  
+  .list li {
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-size: 16px;
+  }
+  
+
+  a{
+    text-decoration: none;
+    font-weight: bolder;
+  }
+
+
+  
+  .read-more-btn {
+    background-color: #008276;
+    border-radius: 20px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .read-more-btn a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+
+  #colorPalette {
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+  
+  .palette {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .color {
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+  }
+  
+  a:visited{
+    color: #006574;
+  }
+  ul {
+    list-style-image: url('./img/sqpurple.gif');
+  }
+   
+  /*  */
+  .palette div{
+    cursor: pointer;
+    border-radius: 50%;
+  }
+
+  
+
+  @media (max-width: 767px) {
+    /* CSS rules for mobile screens */
+    body {
+      font-size: 16px;
+      
+    }
+
+    .intro,
+    .next,
+    .later{
+      flex-direction: column;
+    }
+
+    .color {
+      width: 10px;
+      height: 10px;
+      margin-right: 3px;
+    }
+
+  }
+  
+
+  form {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding-right: 40px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #008276;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+input[type="submit"]:focus {
+    outline: none;
+}
+
+/* Optional: Add some media queries for responsiveness */
+@media screen and (max-width: 480px) {
+    form {
+        max-width: 90%;
+    }
+}
+
+
+/* gallery */
+
+#gallery {
+  text-align: center;
+  padding: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* contact */
+
+#contact{
+  background-color: #2F4858;
+  padding: 20px 20px;
+}
+
+h2{
+  text-align: center;
+  font-size: 34px;
+}
